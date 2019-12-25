@@ -1,0 +1,40 @@
+
+
+{% extends "base/base.html" %}
+    {% block content %}
+    <div class="container">
+    <head>
+
+        <h1><img src="http://sportsmockery.com/wp-content/uploads/2018/05/facebook-social-media-fb-logo-square-3b84792233341efb-512x512.png" height="50pxl" width="50pxl" />  Home</h1>
+
+        <hr>
+    </head>
+    <body>
+        <section class="signup">
+            <form>
+            <h2>New here??</h2>
+            <label for="signup">Click here to create new account!!</label>
+                <br>
+                <button id="signup" formaction="signup/">Sign Up</button>
+            <hr>
+            </form>
+        </section>
+        <section class="login">
+            <form>
+            <label for="username">User name:</label>
+            <input type="text" name="username" id="username" required minlength="5">
+            <br>
+            <label for="passwd">Password:</label>
+            <input type="password" name="passwd" id="passwd" required minlength="5">
+            <br>
+            <input type="submit" value="Login">
+            <hr>
+            </form>
+        </section>
+    </body>
+<footer>
+    <a href="./about/"><h3>About Developers</h3></a>
+
+</footer>
+    </div>
+{% endblock content%}
